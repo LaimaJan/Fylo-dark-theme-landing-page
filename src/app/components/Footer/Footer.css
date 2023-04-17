@@ -1,0 +1,133 @@
+.footer-content {
+	background-color: var(--footer-dark-blue);
+	margin-top: -150px;
+}
+
+.footer-content-box {
+	width: 90%;
+	margin: 0 auto;
+	padding-top: 250px;
+	padding-bottom: 100px;
+	display: flex;
+	flex-direction: column;
+	color: var(--white);
+	font-family: var(--raleway-font);
+	font-size: 16px;
+}
+
+.logo-container-footer {
+	margin-bottom: 40px;
+}
+
+.footer-text-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.location {
+	display: flex;
+	flex-direction: row;
+	align-items: self-start;
+	gap: 20px;
+	letter-spacing: 1.2px;
+	line-height: 1.2;
+	width: 30%;
+}
+
+.contact-info {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.contact-info > * {
+	display: flex;
+	flex-direction: row;
+	gap: 20px;
+}
+
+.about-us ul li a,
+.contact-us ul li a {
+	color: var(--white);
+	text-decoration: none;
+	padding-bottom: 20px;
+}
+
+.about-us ul li a:hover,
+.contact-us ul li a:hover {
+	font-weight: 600;
+}
+
+.about-us ul li,
+.contact-us ul li {
+	padding-bottom: 20px;
+}
+
+.icon {
+	width: fit-content;
+	height: fit-content;
+	display: flex;
+	justify-content: center;
+	padding: 5px 5px;
+	border: 1px solid var(--white);
+	border-radius: 60%;
+}
+
+.icon:hover {
+	border: 1px solid #8dd9e6;
+	border-radius: 60%;
+}
+
+.icon img {
+	width: 20px;
+	height: 20px;
+	filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%)
+		hue-rotate(42deg) brightness(102%) contrast(102%);
+}
+
+.icon img:hover {
+	filter: brightness(0) saturate(100%) invert(86%) sepia(84%) saturate(6565%)
+		hue-rotate(164deg) brightness(92%) contrast(95%);
+}
+
+.social-icons {
+	display: flex;
+	flex-direction: row;
+	gap: 20px;
+}
+
+@media screen and (max-width: 375px) {
+	.footer-content-box {
+		padding-bottom: 50px;
+	}
+
+	.footer-text-container {
+		width: 100%;
+		flex-direction: column;
+		justify-content: center;
+		gap: 20px;
+		font-size: 13px;
+		font-weight: 500;
+	}
+
+	.footer {
+		width: 100%;
+	}
+
+	.footer img {
+		width: 12px;
+		height: 13px;
+	}
+
+	.contact-info {
+		margin-bottom: 60px;
+	}
+
+	.social-icons {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		gap: 20px;
+	}
+}
