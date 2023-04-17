@@ -1,11 +1,9 @@
 import './App.css';
 
 import Navigation from './components/Navigation/Navigation';
-
 import Section1 from './components/Section-1/Section1';
 import Section2 from './components/Section-2/Section2';
 import Section3 from './components/Section-3/Section3';
-import Section4 from './components/Section-4/Section4';
 import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
 
@@ -17,7 +15,6 @@ function App() {
 
 	const handleSubmit = (e) => {
 		e.preventDefault();
-		console.log('Form was submitted!');
 	};
 
 	function isValidEmail(email) {
